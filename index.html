@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Fotografico - Vincenzo</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/script.js"></script>
 </head>
 <body>
 
@@ -13,60 +13,56 @@
     <nav class="navbar">
         <div class="logo">Vincenzo</div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">Chi Sono</a></li>
-            <li><a href="#contact">Contatti</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Progetti</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">Chi Sono</a></li>
+            <li><a href="contact.html">Contatti</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero">
         <div class="hero-content">
-            <h1>Benvenuto nel Mio Portfolio</h1>
-            <p>Scatto emozioni, un fotogramma alla volta.</p>
+            <h1>Scatto emozioni, un fotogramma alla volta.</h1>
+            <p>Benvenuto nel mio mondo fotografico.</p>
             <a href="#portfolio" class="btn">Vedi il Mio Lavoro</a>
         </div>
     </section>
 
-    <!-- Portfolio -->
+    <!-- Portfolio con Filtri -->
     <section id="portfolio" class="portfolio">
         <h2>Portfolio</h2>
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">Tutti</button>
+            <button class="filter-btn" data-category="paesaggi">Paesaggi</button>
+            <button class="filter-btn" data-category="ritratti">Ritratti</button>
+            <button class="filter-btn" data-category="street">Street Photography</button>
+        </div>
         <div class="gallery">
-            <img src="foto1.jpg" alt="Foto 1" class="gallery-item">
-            <img src="foto2.jpg" alt="Foto 2" class="gallery-item">
-            <img src="foto3.jpg" alt="Foto 3" class="gallery-item">
-            <img src="foto4.jpg" alt="Foto 4" class="gallery-item">
-            <img src="foto5.jpg" alt="Foto 5" class="gallery-item">
-            <img src="foto6.jpg" alt="Foto 6" class="gallery-item">
+            <div class="gallery-item" data-category="paesaggi">
+                <img src="assets/images/foto1.jpg" alt="Paesaggio">
+                <div class="overlay">
+                    <h3>Paesaggio Incantato</h3>
+                    <p>Scattata in Dolomiti, 12 Agosto 2024</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="ritratti">
+                <img src="assets/images/foto2.jpg" alt="Ritratto">
+                <div class="overlay">
+                    <h3>Ritratto in Luce Naturale</h3>
+                    <p>Scattato a Napoli, 5 Marzo 2024</p>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <!-- Chi Sono -->
-    <section id="about" class="about">
-        <h2>Chi Sono</h2>
-        <div class="about-content">
-            <img src="profilo.jpg" alt="Foto Profilo">
-            <p>Ciao! Sono Vincenzo, un appassionato di fotografia che ama catturare attimi e raccontare storie attraverso le immagini.</p>
-        </div>
-    </section>
-
-    <!-- Contatti -->
-    <section id="contact" class="contact">
-        <h2>Contattami</h2>
-        <form>
-            <input type="text" placeholder="Nome" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Messaggio" required></textarea>
-            <button type="submit" class="btn">Invia</button>
-        </form>
     </section>
 
     <!-- Footer -->
     <footer>
         <p>© 2025 Vincenzo. Tutti i diritti riservati.</p>
         <div class="social-links">
-            <a href="#">Instagram</a> | <a href="#">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
         </div>
     </footer>
 
